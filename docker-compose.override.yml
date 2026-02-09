@@ -1,0 +1,7 @@
+services:
+  # Local dev / E2E: throttling makes Playwright flaky (registration/login can hit rate limits).
+  # Production uses docker-compose.prod.yml and is unaffected by this override.
+  api:
+    environment:
+      DISABLE_THROTTLE: "true"
+

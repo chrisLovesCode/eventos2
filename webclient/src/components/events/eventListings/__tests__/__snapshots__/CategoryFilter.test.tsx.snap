@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryFilter Component Snapshots - Chips Variant should match snapshot with empty categories 1`] = `null`;
+
+exports[`CategoryFilter Component Snapshots - Chips Variant should match snapshot with multiple selections 1`] = `
+<div
+  class=""
+>
+  <div
+    class="mb-3 flex items-center justify-between"
+  >
+    <h3
+      class="text-sm font-semibold text-white"
+    >
+      Kategorien filtern
+    </h3>
+  </div>
+  <div
+    class="flex flex-wrap gap-3"
+  >
+    <button
+      aria-label="Kategorie Tech abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Tech
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Sports auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Sports
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Music abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Music
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CategoryFilter Component Snapshots - Chips Variant should match snapshot with no selection 1`] = `
+<div
+  class=""
+>
+  <div
+    class="mb-3 flex items-center justify-between"
+  >
+    <h3
+      class="text-sm font-semibold text-white"
+    >
+      Kategorien filtern
+    </h3>
+  </div>
+  <div
+    class="flex flex-wrap gap-3"
+  >
+    <button
+      aria-label="Kategorie Tech auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Tech
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Sports auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Sports
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Music auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Music
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CategoryFilter Component Snapshots - Chips Variant should match snapshot with single selection 1`] = `
+<div
+  class=""
+>
+  <div
+    class="mb-3 flex items-center justify-between"
+  >
+    <h3
+      class="text-sm font-semibold text-white"
+    >
+      Kategorien filtern
+    </h3>
+  </div>
+  <div
+    class="flex flex-wrap gap-3"
+  >
+    <button
+      aria-label="Kategorie Tech abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Tech
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Sports auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Sports
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Music auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Music
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CategoryFilter Component Snapshots - Sidebar Variant should match snapshot with multiple selections 1`] = `
+<div
+  class=""
+>
+  <div
+    class="mb-3 flex items-center justify-between"
+  >
+    <h3
+      class="text-sm font-semibold text-white"
+    >
+      Kategorien filtern
+    </h3>
+  </div>
+  <div
+    class="flex flex-wrap gap-3"
+  >
+    <button
+      aria-label="Kategorie Tech abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Tech
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Sports abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Sports
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Music abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Music
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CategoryFilter Component Snapshots - Sidebar Variant should match snapshot with no selection 1`] = `
+<div
+  class=""
+>
+  <div
+    class="mb-3 flex items-center justify-between"
+  >
+    <h3
+      class="text-sm font-semibold text-white"
+    >
+      Kategorien filtern
+    </h3>
+  </div>
+  <div
+    class="flex flex-wrap gap-3"
+  >
+    <button
+      aria-label="Kategorie Tech auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Tech
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Sports auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Sports
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Music auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Music
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CategoryFilter Component Snapshots - Sidebar Variant should match snapshot with single selection 1`] = `
+<div
+  class=""
+>
+  <div
+    class="mb-3 flex items-center justify-between"
+  >
+    <h3
+      class="text-sm font-semibold text-white"
+    >
+      Kategorien filtern
+    </h3>
+  </div>
+  <div
+    class="flex flex-wrap gap-3"
+  >
+    <button
+      aria-label="Kategorie Tech auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Tech
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Sports abwählen"
+      aria-pressed="true"
+      class="chip-pill chip-pill-active"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Sports
+      </span>
+    </button>
+    <button
+      aria-label="Kategorie Music auswählen"
+      aria-pressed="false"
+      class="chip-pill chip-pill-inactive"
+      type="button"
+    >
+      <i
+        class="h-4 w-4 text-primary"
+        data-testid="font-awesome-icon"
+      />
+      <span>
+        Music
+      </span>
+    </button>
+  </div>
+</div>
+`;

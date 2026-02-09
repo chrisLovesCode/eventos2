@@ -1,0 +1,121 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  USER
+  MODERATOR
+}
+
+enum AuthProvider {
+  LOCAL
+  GOOGLE
+  FACEBOOK
+  APPLE
+}
+
+model User {
+  id                 String        @id @default(uuid())
+  email              String        @unique
+  nick               String        @unique
+  password           String?
+  role               Role          @default(USER)
+  isActive           Boolean       @default(true)
+  emailVerified      Boolean       @default(false)
+  emailVerifiedAt    DateTime?
+  tokenVersion       Int           @default(0)
+  provider           AuthProvider  @default(LOCAL)
+  providerId         String?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+  events             Event[]
+  verificationTokens VerificationToken[]
+  refreshTokens      RefreshToken[]
+
+  @@unique([provider, providerId])
+  @@map("users")
+}
+
+model VerificationToken {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  type      String   // 'email_verification', 'password_reset'
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([token])
+  @@map("verification_tokens")
+}
+
+model RefreshToken {
+  id                   String   @id @default(uuid())
+  tokenHash            String   @unique
+  userId               String
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt            DateTime
+  revokedAt            DateTime?
+  replacedByTokenHash  String?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  @@index([userId])
+  @@index([tokenHash])
+  @@map("refresh_tokens")
+}
+
+model Event {
+  id               String    @id @default(uuid())
+  name             String
+  slug             String    @unique
+  dateStart        DateTime
+  dateEnd          DateTime
+  description      String    @db.Text
+  banner           String?
+  userId           String?
+  user             User?     @relation(fields: [userId], references: [id], onDelete: SetNull)
+  categoryId       String?
+  category         Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  published        Boolean   @default(false)
+  isDeleted        Boolean   @default(false)
+  deletedAt        DateTime?
+  // Organisator-Informationen
+  orgaName         String?
+  orgaWebsite      String?
+  // Event-Details
+  eventWebsite     String?
+  eventAddress     String?
+  latitude         Float?
+  longitude        Float?
+  registrationLink String?
+  isOnlineEvent    Boolean   @default(false)
+  tags             String[]  @default([])
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  @@index([latitude, longitude])
+  @@map("events")
+}
+
+model Category {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  slug      String   @unique
+  events    Event[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("categories")
+}

@@ -1,0 +1,755 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventCard Component Snapshots should match snapshot for online event 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/test-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Test Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/test-banner.jpg"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          15
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          MÄR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Test Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        15.3.2026
+          
+        19:00
+         23:00
+      </span>
+    </div>
+    <div
+      class="flex items-center gap-2 text-sm font-medium text-blue-300 dark:text-blue-300"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="map-pin-icon"
+      />
+      <span>
+        5.2 km entfernt
+      </span>
+    </div>
+    <div
+      class="mt-2"
+    >
+      <span
+        class="badge-pill"
+      >
+        Tech
+      </span>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/test-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EventCard Component Snapshots should match snapshot with full event data 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/test-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Test Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/test-banner.jpg"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          15
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          MÄR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Test Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        15.3.2026
+          
+        19:00
+         23:00
+      </span>
+    </div>
+    <div
+      class="flex items-center gap-2 text-sm font-medium text-blue-300 dark:text-blue-300"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="map-pin-icon"
+      />
+      <span>
+        5.2 km entfernt
+      </span>
+    </div>
+    <div
+      class="flex items-start gap-2 text-sm glass-text-muted"
+    >
+      <i
+        class="mt-0.5 h-4 w-4"
+        data-testid="font-awesome-icon"
+      />
+      <a
+        class="inline-flex items-center gap-2 glass-link"
+        href="https://www.google.com/maps/search/?api=1&query=Teststra%C3%9Fe%20123%2C%2012345%20Berlin"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          class="line-clamp-2"
+        >
+          Teststraße 123, 12345 Berlin
+        </span>
+        <i
+          class="h-3 w-3"
+          data-testid="font-awesome-icon"
+        />
+      </a>
+    </div>
+    <div
+      class="mt-2"
+    >
+      <span
+        class="badge-pill"
+      >
+        Tech
+      </span>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/test-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EventCard Component Snapshots should match snapshot with minimal data 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/minimal-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Minimal Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/bg-vr.png"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          20
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          APR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Minimal Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        20.4.2026
+          
+        12:00
+      </span>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/minimal-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EventCard Component Snapshots should match snapshot without banner 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/test-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Test Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/bg-vr.png"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          15
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          MÄR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Test Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        15.3.2026
+          
+        19:00
+         23:00
+      </span>
+    </div>
+    <div
+      class="flex items-center gap-2 text-sm font-medium text-blue-300 dark:text-blue-300"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="map-pin-icon"
+      />
+      <span>
+        5.2 km entfernt
+      </span>
+    </div>
+    <div
+      class="flex items-start gap-2 text-sm glass-text-muted"
+    >
+      <i
+        class="mt-0.5 h-4 w-4"
+        data-testid="font-awesome-icon"
+      />
+      <a
+        class="inline-flex items-center gap-2 glass-link"
+        href="https://www.google.com/maps/search/?api=1&query=Teststra%C3%9Fe%20123%2C%2012345%20Berlin"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          class="line-clamp-2"
+        >
+          Teststraße 123, 12345 Berlin
+        </span>
+        <i
+          class="h-3 w-3"
+          data-testid="font-awesome-icon"
+        />
+      </a>
+    </div>
+    <div
+      class="mt-2"
+    >
+      <span
+        class="badge-pill"
+      >
+        Tech
+      </span>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/test-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EventCard Component Snapshots should match snapshot without category 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/test-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Test Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/test-banner.jpg"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          15
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          MÄR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Test Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        15.3.2026
+          
+        19:00
+         23:00
+      </span>
+    </div>
+    <div
+      class="flex items-center gap-2 text-sm font-medium text-blue-300 dark:text-blue-300"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="map-pin-icon"
+      />
+      <span>
+        5.2 km entfernt
+      </span>
+    </div>
+    <div
+      class="flex items-start gap-2 text-sm glass-text-muted"
+    >
+      <i
+        class="mt-0.5 h-4 w-4"
+        data-testid="font-awesome-icon"
+      />
+      <a
+        class="inline-flex items-center gap-2 glass-link"
+        href="https://www.google.com/maps/search/?api=1&query=Teststra%C3%9Fe%20123%2C%2012345%20Berlin"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          class="line-clamp-2"
+        >
+          Teststraße 123, 12345 Berlin
+        </span>
+        <i
+          class="h-3 w-3"
+          data-testid="font-awesome-icon"
+        />
+      </a>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/test-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EventCard Component Snapshots should match snapshot without end date 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/test-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Test Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/test-banner.jpg"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          15
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          MÄR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Test Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        15.3.2026
+          
+        19:00
+      </span>
+    </div>
+    <div
+      class="flex items-center gap-2 text-sm font-medium text-blue-300 dark:text-blue-300"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="map-pin-icon"
+      />
+      <span>
+        5.2 km entfernt
+      </span>
+    </div>
+    <div
+      class="flex items-start gap-2 text-sm glass-text-muted"
+    >
+      <i
+        class="mt-0.5 h-4 w-4"
+        data-testid="font-awesome-icon"
+      />
+      <a
+        class="inline-flex items-center gap-2 glass-link"
+        href="https://www.google.com/maps/search/?api=1&query=Teststra%C3%9Fe%20123%2C%2012345%20Berlin"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          class="line-clamp-2"
+        >
+          Teststraße 123, 12345 Berlin
+        </span>
+        <i
+          class="h-3 w-3"
+          data-testid="font-awesome-icon"
+        />
+      </a>
+    </div>
+    <div
+      class="mt-2"
+    >
+      <span
+        class="badge-pill"
+      >
+        Tech
+      </span>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/test-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EventCard Component Snapshots should match snapshot without location 1`] = `
+<div
+  class="card-hover group flex flex-col overflow-hidden glass-card bg-card"
+>
+  <a
+    class="block"
+    href="/events/test-event"
+  >
+    <div
+      class="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 via-muted to-card/60"
+    >
+      <img
+        alt="Test Event"
+        class="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        src="/test-banner.jpg"
+      />
+      <div
+        class="absolute left-4 top-4 z-10 date-badge"
+      >
+        <span
+          class="text-3xl font-bold leading-none text-white"
+        >
+          15
+        </span>
+        <span
+          class="text-xs font-semibold uppercase tracking-wide glass-text"
+        >
+          MÄR.
+        </span>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 p-6 pt-20"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+          style="mask-image: linear-gradient(to top, black 30%, transparent 100%);"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 via-black/20 to-transparent"
+        />
+        <h3
+          class="relative text-xl font-bold text-white group-hover:text-primary"
+        >
+          Test Event
+        </h3>
+      </div>
+    </div>
+  </a>
+  <div
+    class="flex flex-col flex-1 gap-3 p-5 glass-body"
+  >
+    <div
+      class="flex items-center gap-2 text-sm glass-text"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="clock-icon"
+      />
+      <span>
+        15.3.2026
+          
+        19:00
+         23:00
+      </span>
+    </div>
+    <div
+      class="mt-2"
+    >
+      <span
+        class="badge-pill"
+      >
+        Tech
+      </span>
+    </div>
+    <div
+      class="mt-auto pt-2"
+    >
+      <a
+        class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm w-full"
+        href="/events/test-event"
+      >
+        Mehr erfahren
+      </a>
+    </div>
+  </div>
+</div>
+`;

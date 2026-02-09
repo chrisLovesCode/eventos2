@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component Snapshots should match snapshot when disabled 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm"
+  disabled=""
+>
+  Disabled
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with combined props 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-danger text-danger-foreground hover:bg-danger/90 px-5 py-3 text-base"
+  disabled=""
+>
+  Combined Props
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with custom className 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm custom-class"
+>
+  Custom
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with danger variant 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-danger text-danger-foreground hover:bg-danger/90 px-4 py-2 text-sm"
+>
+  Delete
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with default props 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm"
+>
+  Click me
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with ghost variant 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-transparent text-foreground hover:bg-muted px-4 py-2 text-sm"
+>
+  Ghost
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with large size 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-5 py-3 text-base"
+>
+  Large
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with medium size 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm"
+>
+  Medium
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with outline variant 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 border border-border bg-surface text-foreground hover:bg-muted px-4 py-2 text-sm"
+>
+  Outline
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with primary variant 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 text-sm"
+>
+  Primary
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with secondary variant 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-card text-card-foreground hover:bg-card/90 px-4 py-2 text-sm"
+>
+  Secondary
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with small size 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-primary text-primary-foreground hover:bg-primary/90 px-3 py-1.5 text-sm"
+>
+  Small
+</button>
+`;
+
+exports[`Button Component Snapshots should match snapshot with success variant 1`] = `
+<button
+  class="inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] font-semibold transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95 bg-success text-success-foreground hover:bg-success/90 px-4 py-2 text-sm"
+>
+  Success
+</button>
+`;

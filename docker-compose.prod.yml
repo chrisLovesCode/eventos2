@@ -1,0 +1,109 @@
+services:
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: eventos2_nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/nginx/ssl:/etc/nginx/ssl:ro
+      - ./docker/nginx/certbot:/var/www/certbot:ro
+      - ./api/uploads:/app/uploads:ro  # Serve uploaded files
+    networks:
+      - eventos2_network
+    depends_on:
+      - api
+      - webclient
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost/health > /dev/null"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: eventos2_postgres
+    restart: always
+    env_file:
+      - .env.prod
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backups:/backups  # Backup directory
+    networks:
+      - eventos2_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-eventos2_db}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    # Don't expose port to host in production - only internal access
+    # ports:
+    #   - "5432:5432"
+
+  # Node.js API service (for NestJS)
+  api:
+    image: eventos2-api:prod
+    container_name: eventos2_api
+    restart: always
+    env_file:
+      - .env.prod
+    volumes:
+      - api_logs:/app/logs
+      - ./api/uploads:/app/uploads  # Persistent uploads
+    networks:
+      - eventos2_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:3000/health > /dev/null"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    # Don't expose port to host - nginx handles this
+    # expose:
+    #   - "3000"
+
+  # Next.js Webclient service (for frontend)
+  webclient:
+    image: eventos2-webclient:prod
+    container_name: eventos2_webclient
+    restart: always
+    env_file:
+      - .env.prod
+    environment:
+      NODE_ENV: production
+    networks:
+      - eventos2_network
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:3000 > /dev/null"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    # Don't expose port to host - nginx handles this
+    # expose:
+    #   - "3000"
+
+# Named volumes for data persistence
+volumes:
+  postgres_data:
+    driver: local
+  api_logs:
+    driver: local
+
+# Custom network for service communication
+networks:
+  eventos2_network:
+    driver: bridge

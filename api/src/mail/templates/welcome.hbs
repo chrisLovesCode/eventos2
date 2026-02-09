@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willkommen bei {{brandName}}</title>
+  {{> _email-styles}}
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">{{brandName}}</div>
+    </div>
+    
+    <h1>Willkommen {{nick}}!</h1>
+    
+    <p>Deine E-Mail-Adresse wurde erfolgreich verifiziert. Dein Account ist jetzt aktiv!</p>
+    
+    <p>Bei {{brandName}} kannst du:</p>
+    <ul>
+      <li>Events erstellen und verwalten</li>
+      <li>Nach interessanten Veranstaltungen suchen</li>
+      <li>Events nach Kategorien filtern</li>
+      <li>Deine eigenen Events organisieren</li>
+    </ul>
+    
+    <p>Melde dich jetzt an und entdecke spannende Events:</p>
+    
+    <div style="text-align: center;">
+      <a href="{{loginUrl}}" class="button button-success">Jetzt anmelden</a>
+    </div>
+    
+    <div class="footer">
+      <p>&copy; {{year}} {{brandName}}. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</body>
+</html>

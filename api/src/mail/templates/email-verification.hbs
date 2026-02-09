@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Mail verifizieren</title>
+  {{> _email-styles}}
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">{{brandName}}</div>
+    </div>
+    
+    <h1>Hallo {{nick}}!</h1>
+    
+    <p>Vielen Dank für deine Registrierung bei {{brandName}}.</p>
+    
+    <p>Um deine E-Mail-Adresse zu verifizieren und deinen Account zu aktivieren, klicke bitte auf den folgenden Button:</p>
+    
+    <div style="text-align: center;">
+      <a href="{{verificationUrl}}" class="button button-primary">E-Mail verifizieren</a>
+    </div>
+    
+    <p>Oder kopiere diesen Link in deinen Browser:</p>
+    <p><a href="{{verificationUrl}}" class="link">{{verificationUrl}}</a></p>
+    
+    <p class="note">
+      Dieser Link ist 24 Stunden gültig. Falls du dich nicht bei {{brandName}} registriert hast, ignoriere diese E-Mail einfach.
+    </p>
+    
+    <div class="footer">
+      <p>&copy; {{year}} {{brandName}}. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</body>
+</html>
