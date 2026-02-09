@@ -20,7 +20,7 @@ const isThrottleDisabled = process.env.DISABLE_THROTTLE === 'true';
 
 const envFilePath =
   process.env.NODE_ENV === 'test'
-    ? ['.env.test.local', '.env.test', '.env.local', '.env']
+    ? ['.env.test.local', '.env.test', '.env.test.example', '.env.local', '.env']
     : ['.env.local', '.env'];
 
 @Module({
