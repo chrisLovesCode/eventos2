@@ -1,6 +1,7 @@
 # Eventos (TechEvents)
 
 Demo: Die Anwendung ist mit Dummy-Daten unter [https://eventos.chrisvaupel.de](https://eventos.chrisvaupel.de) live verfuegbar.
+Ein Cronjob setzt diese nachts automatisch auf die Demo-Daten zurück.
 
 **Tech-Stack**
 - Backend: NestJS (Node.js, TypeScript), Prisma, PostgreSQL
